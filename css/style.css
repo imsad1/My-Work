@@ -46,6 +46,13 @@ h1,h2,h3,h4,h5,h6, p {
   content: url(../img/svg/logo-light.svg);
 }
 
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--title);
+  text-transform: capitalize;
+}
+
 /* header start */
 
 .header__list {
@@ -113,6 +120,68 @@ h1,h2,h3,h4,h5,h6, p {
 .header__menu:not(.collapsed)::after {
   top: 0;
   transform: rotate(45deg);
+}
+
+.header__content {
+  padding: 42px 0 75px;
+}
+
+.header__content-subtitle {
+  font-family: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.header__content-title {
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.header__content-btn{
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 50px;
+}
+
+.header__tech-card:first-of-type .header__tech-brand  {
+  color: #E44F26;
+}
+.header__tech-card:nth-of-type(2) .header__tech-brand  {
+  color: #1572B6;
+}
+.header__tech-card:last-of-type .header__tech-brand  {
+  color: #790FF1;
+}
+
+.header__tech-name{
+  text-transform: uppercase;
+  color: var(--title);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.header__carousel-indicators {
+  column-gap: 30px;
+  position: static;
+  margin: 50px 0 0;
+}
+
+.header__indicators-dots {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+  border: none !important;
+  background: var(--dots) !important;
+  opacity: 1 !important;
+}
+
+.header__indicators-dots.active {
+  background: var(--dots-active) !important;
+}
+
+.header_carousel-img {
+  max-height: 500px;
 }
 
 /* header end */
