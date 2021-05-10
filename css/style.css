@@ -4,6 +4,7 @@
   --body: #fff;
   --text: #323232;
   --link: #7177F1;
+  --footer-link: #7177F1;
   --title: #7177F1;
   --btn: #7177F1;
   --dots-active: #7177F1;
@@ -565,3 +566,21 @@ p {
 }
 
 /* works end */
+
+/* footer start */
+
+.footer {
+  padding-bottom: 130px;
+}
+
+.footer__link, .footer__contact {
+  font-size: 24px;
+  color: var(--footer-link);
+}
+
+.footer__link:hover, .footer__contact:hover {
+  color: var(--footer-link);
+  text-decoration: underline;
+}
+
+/* footer end */
